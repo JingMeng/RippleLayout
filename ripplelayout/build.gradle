@@ -1,16 +1,16 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
 
 android {
-    compileSdkVersion 26
+    namespace 'com.southernbox.ripplelayout'
+    compileSdk 34
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdk 15
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
 
@@ -19,13 +19,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    
     }
 }
 
-publish {
-    userOrg = 'southernbox'
-    groupId = 'com.southernbox'
-    artifactId = 'RippleLayout'
-    publishVersion = '0.1.0'
-    website = 'https://github.com/SouthernBox/RippleLayout'
-}
+
+

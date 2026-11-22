@@ -1,1 +1,1 @@
-include ':sample', ':ripplelayout', ':ripplelayout'
+include ':sample', ':ripplelayout'

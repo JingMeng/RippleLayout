@@ -1,14 +1,13 @@
-package com.southernbox.ripplelayout.sample;
+﻿package com.southernbox.ripplelayout.sample;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.southernbox.ripplelayout.sample.R;
 
 /**
  * Created by SouthernBox on 2017/4/20 0020.
- * 主页面
- */
+ * 涓婚〉闈? */
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,3 +17,4 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
+

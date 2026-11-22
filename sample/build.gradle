@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    namespace 'com.southernbox.ripplelayout'
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.southernbox.ripplelayout"
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdk 15
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
@@ -17,10 +17,15 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    
     }
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:26.1.0'
-    compile project(':ripplelayout')
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation project(':ripplelayout')
 }
+
+
+
+
